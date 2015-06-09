@@ -19,25 +19,25 @@
     
 }
 
-@property (nonatomic, retain) UILabel *m_plblTemp;
+@property (nonatomic, retain, nullable) UILabel *m_plblTemp;
 
 #pragma mark - Public
-- ( void )addBackgroundImage:( UIImage * )pImg;
-- ( void )addLabelItem:( NSString * )pstrText Style:( MTLabelStyleObj * )pLabelStyle;
-- ( void )addImageItem:( UIImage * )pImg Style:( MTImageViewStyleObj * )pImageViewStyle;
-- ( void )clearAllLayer;
+- (void)addBackgroundImage:(nonnull UIImage *)pImg;
+- (void)addLabelItem:(nonnull NSString *)pstrText Style:(nullable MTLabelStyleObj * )pLabelStyle;
+- (void)addImageItem:(nonnull UIImage *)pImg Style:(nullable MTImageViewStyleObj * )pImageViewStyle;
+- (void)clearAllLayer;
 
-- (UIImage *) outputImage:(NSString *)path save:(BOOL)isSave;
+- (nullable UIImage *) outputImage:(nullable NSString *)path save:(BOOL)isSave;
 
-- (void) displayPickerView:(UILabel *)plblTemp;
+- (void) displayPickerView:(nonnull UILabel *)plblTemp;
 - (void) hidePickerView;
 
 @end
 
 @interface UIView(FindUIViewController)
 
-- (UIViewController *) firstAvailableUIViewController;
+- (nullable UIViewController *) firstAvailableUIViewController;
 
-- (id) traverseResponderChainForUIViewController;
+- (nullable instancetype) traverseResponderChainForUIViewController;
 
 @end

@@ -15,7 +15,7 @@
 ### `.h檔` 定義 MTLayerSceneView
 
 ```objective-c
-@property ( weak, nonatomic ) IBOutlet MTLayerSceneView *m_pMTLayerScene;
+@property (weak, nonatomic) IBOutlet MTLayerSceneView *m_pMTLayerScene;
 ```
 
 ### `.m檔` 呼叫函式
@@ -23,7 +23,7 @@
 #### 新增 圖片物件
 
 ```objective-c
-- (instancetype) initWithFrame:(CGRect)frame WithImage:(UIImage *)pImg;
+- (nonnull instancetype) initWithFrame:(CGRect)frame WithImage:(nullable UIImage *)pImg;
 ```
 
 ```objective-c
@@ -33,12 +33,12 @@
 #### 新增 文字物件
 
 ```objective-c
-- (instancetype) initWithFrame:(CGRect)frame WithString:(NSString *)pstrText;
+- (nonnull instancetype) initWithFrame:(CGRect)frame WithString:(nullable NSString *)pstrText;
 ```
 
 ```objective-c
-[self.m_pMTLayerScene addLabelItem:message Style:nil];
+[self.m_pMTLayerScene addLabelItem:message Style:nil]
 ```
 
-## 版權
-修改版權為Mittap所有。
+## License
+MTLayerManager is released under the MIT license. See LICENSE for details.。

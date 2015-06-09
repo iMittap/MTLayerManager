@@ -9,12 +9,10 @@
 #import "MTLayerView.h"
 #import "MTLayerLabel.h"
 
-
 @interface MTLayerLabel ()
 {
     
 }
-
 
 @end
 
@@ -33,7 +31,7 @@
     return self;
 }
 
-- ( instancetype )initWithFrame:(CGRect)frame WithString:( NSString * )pstrText
+- (nonnull instancetype) initWithFrame:(CGRect)frame WithString:(nullable NSString *)pstrText
 {
     self = [super initWithFrame:frame];
     if ( self )

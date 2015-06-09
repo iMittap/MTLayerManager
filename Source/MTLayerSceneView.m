@@ -64,7 +64,7 @@ NSArray * const titles() {
 }
 
 #pragma mark - Public
-- ( void )addBackgroundImage:( UIImage * )pImg
+- (void)addBackgroundImage:(nonnull UIImage *)pImg
 {
     self.m_pBackgroudImage = pImg;
     
@@ -74,7 +74,7 @@ NSArray * const titles() {
     
 }
 
-- ( void )addLabelItem:( NSString * )pstrText Style:( MTLabelStyleObj * )pLabelStyle
+- (void)addLabelItem:(nonnull NSString *)pstrText Style:(nullable MTLabelStyleObj * )pLabelStyle
 {
     MTLayerLabel *pMTLayerLabel =
         [[MTLayerLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)
@@ -83,7 +83,7 @@ NSArray * const titles() {
     [self addSubview:pMTLayerLabel];
 }
 
-- ( void )addImageItem:( UIImage * )pImg Style:( MTImageViewStyleObj * )pImageViewStyle
+- (void)addImageItem:(nonnull UIImage *)pImg Style:(nullable MTImageViewStyleObj * )pImageViewStyle
 {
     if ( pImageViewStyle )
     {
@@ -112,7 +112,7 @@ NSArray * const titles() {
 
 #pragma mark - 
 
-- (void) displayPickerView:(UILabel *)plblTemp
+- (void) displayPickerView:(nonnull UILabel *)plblTemp
 {
     NSLog(@"displayPickerView %@", [self firstAvailableUIViewController]);
     
@@ -173,7 +173,7 @@ NSArray * const titles() {
 
 #pragma mark - Output Image
 
-- (UIImage *) outputImage:(NSString *)path save:(BOOL)isSave
+- (nullable UIImage *) outputImage:(nullable NSString *)path save:(BOOL)isSave
 {
     if (!path.length)
     {
@@ -233,12 +233,12 @@ NSArray * const titles() {
 
 @implementation UIView(FindUIViewController)
 
-- (UIViewController *) firstAvailableUIViewController
+- (nullable UIViewController *) firstAvailableUIViewController
 {
     return (UIViewController *)[self traverseResponderChainForUIViewController];
 }
 
-- (id) traverseResponderChainForUIViewController
+- (nullable instancetype) traverseResponderChainForUIViewController
 {
     id nextResponder = [self nextResponder];
     if ([nextResponder isKindOfClass:[UIViewController class]]) {

@@ -17,5 +17,4 @@
 @property ( nonatomic, retain ) UIColor     *m_pTextColor;
 @property ( nonatomic, retain ) UIFont      *m_pTextFont;
 
-
 @end

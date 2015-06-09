@@ -12,6 +12,6 @@
 
 @interface MTLayerLabel : MTLayerView
 
-- ( instancetype )initWithFrame:(CGRect)frame WithString:( NSString * )pstrText;
+- (nonnull instancetype) initWithFrame:(CGRect)frame WithString:(nullable NSString *)pstrText;
 
 @end
