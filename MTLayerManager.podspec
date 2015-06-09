@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
   s.source       = { :git => "git@github.com:iMittap/MTLayerManager.git", :tag => s.version }
   s.source_files  = "Source"
-  s.public_header_files = "Source/*.h"
+  s.public_header_files = "Source/*.h" 
 end
