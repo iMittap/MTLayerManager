@@ -41,4 +41,4 @@
 ```
 
 ## License
-MTLayerManager is released under the MIT license. See LICENSE for details.。
+MTLayerManager is released under the Apache license. See LICENSE for details.。
