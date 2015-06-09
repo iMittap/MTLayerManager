@@ -33,7 +33,7 @@
     return self;
 }
 
-- ( id )initWithFrame:(CGRect)frame WithString:( NSString * )pstrText
+- ( instancetype )initWithFrame:(CGRect)frame WithString:( NSString * )pstrText
 {
     self = [super initWithFrame:frame];
     if ( self )

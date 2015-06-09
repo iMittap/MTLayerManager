@@ -14,6 +14,6 @@
     
 }
 
-- ( id )initWithFrame:(CGRect)frame WithImage:( UIImage * )pImg;
+- ( instancetype )initWithFrame:(CGRect)frame WithImage:( UIImage * )pImg;
 
 @end
