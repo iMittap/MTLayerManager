@@ -1,16 +1,16 @@
 //
-//  MittapLayerImageView.m
+//  MTLayerImageView.m
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
 //  Copyright (c) 2015年 HuangRusty. All rights reserved.
 //
 
-#import "MittapLayerView.h"
-#import "MittapLayerImageView.h"
+#import "MTLayerView.h"
+#import "MTLayerImageView.h"
 
 
-@interface MittapLayerImageView ()
+@interface MTLayerImageView ()
 {
     
 }
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation MittapLayerImageView
+@implementation MTLayerImageView
 
 
 #pragma mark - Life Cycle
@@ -39,7 +39,7 @@
     self = [super initWithFrame:frame];
     if ( self )
     {
-        eEMITTAP_LAYER_STYLE = Mittap_LayerStyle_Image;
+        eEMT_LAYER_STYLE = MT_LayerStyle_Image;
         
         UIImageView *pImgView = [[UIImageView alloc] initWithImage:pImg];
         [pImgView setFrame:self.bounds];

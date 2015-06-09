@@ -1,16 +1,16 @@
 //
-//  MittapLayerLabel.m
+//  MTLayerLabel.m
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
 //  Copyright (c) 2015年 HuangRusty. All rights reserved.
 //
 
-#import "MittapLayerView.h"
-#import "MittapLayerLabel.h"
+#import "MTLayerView.h"
+#import "MTLayerLabel.h"
 
 
-@interface MittapLayerLabel ()
+@interface MTLayerLabel ()
 {
     
 }
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation MittapLayerLabel
+@implementation MTLayerLabel
 
 #pragma mark - Life Cycle
 - ( id )initWithCoder:(NSCoder *)aDecoder
@@ -38,7 +38,7 @@
     self = [super initWithFrame:frame];
     if ( self )
     {
-        eEMITTAP_LAYER_STYLE = Mittap_LayerStyle_Text;
+        eEMT_LAYER_STYLE = MT_LayerStyle_Text;
         
         UIFont *pFont = [UIFont boldSystemFontOfSize:24.0f];
         UILabel *pLbl = [[UILabel alloc] initWithFrame:self.bounds];

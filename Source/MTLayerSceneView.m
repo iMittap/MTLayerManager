@@ -1,16 +1,16 @@
 //
-//  MittapLayerSceneView.m
+//  MTLayerSceneView.m
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
 //  Copyright (c) 2015年 HuangRusty. All rights reserved.
 //
 
-#import "MittapLayerSceneView.h"
-#import "MittapLayerImageView.h"
-#import "MittapLayerLabel.h"
+#import "MTLayerSceneView.h"
+#import "MTLayerImageView.h"
+#import "MTLayerLabel.h"
 
-@interface MittapLayerSceneView ()
+@interface MTLayerSceneView ()
 {
     UIImage         *m_pBackgroudImage;
     UIView          *m_pvwPickerBK;
@@ -24,7 +24,7 @@
 @end
 
 
-@implementation MittapLayerSceneView
+@implementation MTLayerSceneView
 @synthesize m_pBackgroudImage;
 @synthesize m_pPicker;
 @synthesize m_pvwPickerBK;
@@ -74,36 +74,36 @@ NSArray * const titles() {
     
 }
 
-- ( void )addLabelItem:( NSString * )pstrText Style:( MittapLabelStyleObj * )pLabelStyle
+- ( void )addLabelItem:( NSString * )pstrText Style:( MTLabelStyleObj * )pLabelStyle
 {
-    MittapLayerLabel *pMittapLayerLabel =
-        [[MittapLayerLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)
+    MTLayerLabel *pMTLayerLabel =
+        [[MTLayerLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)
                                      WithString:pstrText];
     
-    [self addSubview:pMittapLayerLabel];
+    [self addSubview:pMTLayerLabel];
 }
 
-- ( void )addImageItem:( UIImage * )pImg Style:( MittapImageViewStyleObj * )pImageViewStyle
+- ( void )addImageItem:( UIImage * )pImg Style:( MTImageViewStyleObj * )pImageViewStyle
 {
     if ( pImageViewStyle )
     {
     
     }
     
-    MittapLayerImageView *pMittapLayerImageView =
-        [[MittapLayerImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)
+    MTLayerImageView *pMTLayerImageView =
+        [[MTLayerImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)
                                           WithImage:pImg];
     
-    [self addSubview:pMittapLayerImageView];
+    [self addSubview:pMTLayerImageView];
 }
 
 - ( void )clearAllLayer
 {
     NSArray *pSubViews = [self subviews];
     
-    for ( MittapLayerView *pView in pSubViews )
+    for ( MTLayerView *pView in pSubViews )
     {
-        if ( [pView isKindOfClass:[MittapLayerView class]] )
+        if ( [pView isKindOfClass:[MTLayerView class]] )
         {
             [pView removeFromSuperview];
         }

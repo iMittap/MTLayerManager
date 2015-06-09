@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MittapLayerSceneView.h"
+#import "MTLayerSceneView.h"
 
 @interface ViewController ( ) < UITextFieldDelegate >
 
@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.m_pMittapLayerScene addBackgroundImage:[UIImage imageNamed:@"DemoBG.jpg"]];
+    [self.m_pMTLayerScene addBackgroundImage:[UIImage imageNamed:@"DemoBG.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,24 +47,24 @@
     NSInteger nIdx = pBtn.tag;
     NSString *pstrImgName = [NSString stringWithFormat:@"Bubble_%ld.png",(long)nIdx];
     
-    [self.m_pMittapLayerScene addImageItem:[UIImage imageNamed:pstrImgName]
+    [self.m_pMTLayerScene addImageItem:[UIImage imageNamed:pstrImgName]
                                      Style:nil];
 }
 
 - ( IBAction )pressSendTextBtn:( id )sender
 {
-    [self.m_pMittapLayerScene addLabelItem:[self.m_pTFMsg text]
+    [self.m_pMTLayerScene addLabelItem:[self.m_pTFMsg text]
                                      Style:nil];
 }
 
 - ( IBAction )pressClearBtn:( id )sender
 {
-    [self.m_pMittapLayerScene clearAllLayer];
+    [self.m_pMTLayerScene clearAllLayer];
 }
 
 - ( IBAction )pressOutputBtn:( id )sender
 {
-    [self.m_pMittapLayerScene outputImage:nil save:YES];
+    [self.m_pMTLayerScene outputImage:nil save:YES];
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MittapLayerImageView.h
+//  MTLayerImageView.h
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
@@ -7,9 +7,9 @@
 //
 
 
-@class MittapLayerView;
+@class MTLayerView;
 
-@interface MittapLayerImageView : MittapLayerView
+@interface MTLayerImageView : MTLayerView
 {
     
 }

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06B4E53B1B2690C5006C3B1F /* MittapImageViewStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E52E1B2690C5006C3B1F /* MittapImageViewStyleObj.m */; };
-		06B4E53C1B2690C5006C3B1F /* MittapLabelStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5301B2690C5006C3B1F /* MittapLabelStyleObj.m */; };
-		06B4E53D1B2690C5006C3B1F /* MittapLayerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5321B2690C5006C3B1F /* MittapLayerImageView.m */; };
-		06B4E53E1B2690C5006C3B1F /* MittapLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5341B2690C5006C3B1F /* MittapLayerLabel.m */; };
-		06B4E53F1B2690C5006C3B1F /* MittapLayerSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5361B2690C5006C3B1F /* MittapLayerSceneView.m */; };
-		06B4E5401B2690C5006C3B1F /* MittapLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5381B2690C5006C3B1F /* MittapLayerView.m */; };
-		06B4E5411B2690C5006C3B1F /* MittapStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E53A1B2690C5006C3B1F /* MittapStyleObj.m */; };
+		06B4E53B1B2690C5006C3B1F /* MTImageViewStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E52E1B2690C5006C3B1F /* MTImageViewStyleObj.m */; };
+		06B4E53C1B2690C5006C3B1F /* MTLabelStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5301B2690C5006C3B1F /* MTLabelStyleObj.m */; };
+		06B4E53D1B2690C5006C3B1F /* MTLayerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5321B2690C5006C3B1F /* MTLayerImageView.m */; };
+		06B4E53E1B2690C5006C3B1F /* MTLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5341B2690C5006C3B1F /* MTLayerLabel.m */; };
+		06B4E53F1B2690C5006C3B1F /* MTLayerSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5361B2690C5006C3B1F /* MTLayerSceneView.m */; };
+		06B4E5401B2690C5006C3B1F /* MTLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E5381B2690C5006C3B1F /* MTLayerView.m */; };
+		06B4E5411B2690C5006C3B1F /* MTStyleObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4E53A1B2690C5006C3B1F /* MTStyleObj.m */; };
 		06B4E5431B269A47006C3B1F /* MTLayerManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 06B4E5421B269A47006C3B1F /* MTLayerManager.podspec */; };
 		D357E2B41AF09D1A005DE652 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D357E2B31AF09D1A005DE652 /* main.m */; };
 		D357E2B71AF09D1A005DE652 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D357E2B61AF09D1A005DE652 /* AppDelegate.m */; };
@@ -29,20 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06B4E52D1B2690C5006C3B1F /* MittapImageViewStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapImageViewStyleObj.h; sourceTree = "<group>"; };
-		06B4E52E1B2690C5006C3B1F /* MittapImageViewStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapImageViewStyleObj.m; sourceTree = "<group>"; };
-		06B4E52F1B2690C5006C3B1F /* MittapLabelStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapLabelStyleObj.h; sourceTree = "<group>"; };
-		06B4E5301B2690C5006C3B1F /* MittapLabelStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapLabelStyleObj.m; sourceTree = "<group>"; };
-		06B4E5311B2690C5006C3B1F /* MittapLayerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapLayerImageView.h; sourceTree = "<group>"; };
-		06B4E5321B2690C5006C3B1F /* MittapLayerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapLayerImageView.m; sourceTree = "<group>"; };
-		06B4E5331B2690C5006C3B1F /* MittapLayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapLayerLabel.h; sourceTree = "<group>"; };
-		06B4E5341B2690C5006C3B1F /* MittapLayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapLayerLabel.m; sourceTree = "<group>"; };
-		06B4E5351B2690C5006C3B1F /* MittapLayerSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapLayerSceneView.h; sourceTree = "<group>"; };
-		06B4E5361B2690C5006C3B1F /* MittapLayerSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapLayerSceneView.m; sourceTree = "<group>"; };
-		06B4E5371B2690C5006C3B1F /* MittapLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapLayerView.h; sourceTree = "<group>"; };
-		06B4E5381B2690C5006C3B1F /* MittapLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapLayerView.m; sourceTree = "<group>"; };
-		06B4E5391B2690C5006C3B1F /* MittapStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MittapStyleObj.h; sourceTree = "<group>"; };
-		06B4E53A1B2690C5006C3B1F /* MittapStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MittapStyleObj.m; sourceTree = "<group>"; };
+		06B4E52D1B2690C5006C3B1F /* MTImageViewStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageViewStyleObj.h; sourceTree = "<group>"; };
+		06B4E52E1B2690C5006C3B1F /* MTImageViewStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageViewStyleObj.m; sourceTree = "<group>"; };
+		06B4E52F1B2690C5006C3B1F /* MTLabelStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLabelStyleObj.h; sourceTree = "<group>"; };
+		06B4E5301B2690C5006C3B1F /* MTLabelStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLabelStyleObj.m; sourceTree = "<group>"; };
+		06B4E5311B2690C5006C3B1F /* MTLayerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLayerImageView.h; sourceTree = "<group>"; };
+		06B4E5321B2690C5006C3B1F /* MTLayerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLayerImageView.m; sourceTree = "<group>"; };
+		06B4E5331B2690C5006C3B1F /* MTLayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLayerLabel.h; sourceTree = "<group>"; };
+		06B4E5341B2690C5006C3B1F /* MTLayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLayerLabel.m; sourceTree = "<group>"; };
+		06B4E5351B2690C5006C3B1F /* MTLayerSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLayerSceneView.h; sourceTree = "<group>"; };
+		06B4E5361B2690C5006C3B1F /* MTLayerSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLayerSceneView.m; sourceTree = "<group>"; };
+		06B4E5371B2690C5006C3B1F /* MTLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLayerView.h; sourceTree = "<group>"; };
+		06B4E5381B2690C5006C3B1F /* MTLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLayerView.m; sourceTree = "<group>"; };
+		06B4E5391B2690C5006C3B1F /* MTStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStyleObj.h; sourceTree = "<group>"; };
+		06B4E53A1B2690C5006C3B1F /* MTStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStyleObj.m; sourceTree = "<group>"; };
 		06B4E5421B269A47006C3B1F /* MTLayerManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTLayerManager.podspec; sourceTree = "<group>"; };
 		D357E2AE1AF09D1A005DE652 /* MTLayerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTLayerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D357E2B21AF09D1A005DE652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,20 +75,20 @@
 		06B4E52C1B2690C5006C3B1F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				06B4E52D1B2690C5006C3B1F /* MittapImageViewStyleObj.h */,
-				06B4E52E1B2690C5006C3B1F /* MittapImageViewStyleObj.m */,
-				06B4E52F1B2690C5006C3B1F /* MittapLabelStyleObj.h */,
-				06B4E5301B2690C5006C3B1F /* MittapLabelStyleObj.m */,
-				06B4E5311B2690C5006C3B1F /* MittapLayerImageView.h */,
-				06B4E5321B2690C5006C3B1F /* MittapLayerImageView.m */,
-				06B4E5331B2690C5006C3B1F /* MittapLayerLabel.h */,
-				06B4E5341B2690C5006C3B1F /* MittapLayerLabel.m */,
-				06B4E5351B2690C5006C3B1F /* MittapLayerSceneView.h */,
-				06B4E5361B2690C5006C3B1F /* MittapLayerSceneView.m */,
-				06B4E5371B2690C5006C3B1F /* MittapLayerView.h */,
-				06B4E5381B2690C5006C3B1F /* MittapLayerView.m */,
-				06B4E5391B2690C5006C3B1F /* MittapStyleObj.h */,
-				06B4E53A1B2690C5006C3B1F /* MittapStyleObj.m */,
+				06B4E52D1B2690C5006C3B1F /* MTImageViewStyleObj.h */,
+				06B4E52E1B2690C5006C3B1F /* MTImageViewStyleObj.m */,
+				06B4E52F1B2690C5006C3B1F /* MTLabelStyleObj.h */,
+				06B4E5301B2690C5006C3B1F /* MTLabelStyleObj.m */,
+				06B4E5311B2690C5006C3B1F /* MTLayerImageView.h */,
+				06B4E5321B2690C5006C3B1F /* MTLayerImageView.m */,
+				06B4E5331B2690C5006C3B1F /* MTLayerLabel.h */,
+				06B4E5341B2690C5006C3B1F /* MTLayerLabel.m */,
+				06B4E5351B2690C5006C3B1F /* MTLayerSceneView.h */,
+				06B4E5361B2690C5006C3B1F /* MTLayerSceneView.m */,
+				06B4E5371B2690C5006C3B1F /* MTLayerView.h */,
+				06B4E5381B2690C5006C3B1F /* MTLayerView.m */,
+				06B4E5391B2690C5006C3B1F /* MTStyleObj.h */,
+				06B4E53A1B2690C5006C3B1F /* MTStyleObj.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -232,15 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B4E53C1B2690C5006C3B1F /* MittapLabelStyleObj.m in Sources */,
+				06B4E53C1B2690C5006C3B1F /* MTLabelStyleObj.m in Sources */,
 				D357E2BA1AF09D1A005DE652 /* ViewController.m in Sources */,
-				06B4E53E1B2690C5006C3B1F /* MittapLayerLabel.m in Sources */,
-				06B4E53B1B2690C5006C3B1F /* MittapImageViewStyleObj.m in Sources */,
-				06B4E53D1B2690C5006C3B1F /* MittapLayerImageView.m in Sources */,
+				06B4E53E1B2690C5006C3B1F /* MTLayerLabel.m in Sources */,
+				06B4E53B1B2690C5006C3B1F /* MTImageViewStyleObj.m in Sources */,
+				06B4E53D1B2690C5006C3B1F /* MTLayerImageView.m in Sources */,
 				D357E2B71AF09D1A005DE652 /* AppDelegate.m in Sources */,
-				06B4E5411B2690C5006C3B1F /* MittapStyleObj.m in Sources */,
-				06B4E53F1B2690C5006C3B1F /* MittapLayerSceneView.m in Sources */,
-				06B4E5401B2690C5006C3B1F /* MittapLayerView.m in Sources */,
+				06B4E5411B2690C5006C3B1F /* MTStyleObj.m in Sources */,
+				06B4E53F1B2690C5006C3B1F /* MTLayerSceneView.m in Sources */,
+				06B4E5401B2690C5006C3B1F /* MTLayerView.m in Sources */,
 				D357E2B41AF09D1A005DE652 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

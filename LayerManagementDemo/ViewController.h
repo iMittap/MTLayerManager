@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MittapLayerSceneView;
+@class MTLayerSceneView;
 @interface ViewController : UIViewController
 
 
-@property ( weak, nonatomic ) IBOutlet MittapLayerSceneView *m_pMittapLayerScene;
+@property ( weak, nonatomic ) IBOutlet MTLayerSceneView *m_pMTLayerScene;
 @property ( weak, nonatomic ) IBOutlet UITextField      *m_pTFMsg;
 
 

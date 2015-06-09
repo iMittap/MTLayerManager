@@ -1,17 +1,17 @@
 //
-//  MittapLayerView.m
+//  MTLayerView.m
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
 //  Copyright (c) 2015年 HuangRusty. All rights reserved.
 //
 
-#import "MittapLayerView.h"
-#import "MittapLayerSceneView.h"
+#import "MTLayerView.h"
+#import "MTLayerSceneView.h"
 
-@interface MittapLayerView ()
+@interface MTLayerView ()
 {
-    EMITTAP_LAYER_STYLE         m_enumLayerStyle;
+    EMT_LAYER_STYLE         m_enumLayerStyle;
     CGPoint                     lastLocation;
 }
 
@@ -20,7 +20,7 @@
 @end
 
 
-@implementation MittapLayerView
+@implementation MTLayerView
 
 #pragma mark - Life Cycle
 - ( id )initWithCoder:(NSCoder *)aDecoder
@@ -74,11 +74,11 @@
         
         UIMenuController *menu = [UIMenuController sharedMenuController];
         
-        if (eEMITTAP_LAYER_STYLE == Mittap_LayerStyle_Image)
+        if (eEMT_LAYER_STYLE == MT_LayerStyle_Image)
         {
             [menu setMenuItems: @[menuItem2]];
         }
-        else if (eEMITTAP_LAYER_STYLE == Mittap_LayerStyle_Text)
+        else if (eEMT_LAYER_STYLE == MT_LayerStyle_Text)
         {
             [menu setMenuItems: @[menuItem1, menuItem2]];
         }
@@ -146,7 +146,7 @@
         if ([view isKindOfClass:[UILabel class]])
         {
             UILabel *plblTemp = (UILabel *)view;
-            MittapLayerSceneView *scene = (MittapLayerSceneView *)self.superview;
+            MTLayerSceneView *scene = (MTLayerSceneView *)self.superview;
             [scene displayPickerView:plblTemp];
         }
         else

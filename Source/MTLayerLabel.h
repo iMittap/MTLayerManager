@@ -1,5 +1,5 @@
 //
-//  MittapLayerLabel.h
+//  MTLayerLabel.h
 //  LayerManagementDemo
 //
 //  Created by HuangRusty on 2015/4/29.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class MittapLayerView;
+@class MTLayerView;
 
-@interface MittapLayerLabel : MittapLayerView
+@interface MTLayerLabel : MTLayerView
 
 - ( id )initWithFrame:(CGRect)frame WithString:( NSString * )pstrText;
 
