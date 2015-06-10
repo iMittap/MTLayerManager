@@ -42,6 +42,7 @@
 		06B4E5381B2690C5006C3B1F /* MTLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLayerView.m; sourceTree = "<group>"; };
 		06B4E5391B2690C5006C3B1F /* MTStyleObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStyleObj.h; sourceTree = "<group>"; };
 		06B4E53A1B2690C5006C3B1F /* MTStyleObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStyleObj.m; sourceTree = "<group>"; };
+		06B4E5911B27DB07006C3B1F /* MTLayerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTLayerHeaders.h; sourceTree = "<group>"; };
 		D357E2AE1AF09D1A005DE652 /* MTLayerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTLayerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D357E2B21AF09D1A005DE652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D357E2B31AF09D1A005DE652 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		06B4E52C1B2690C5006C3B1F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				06B4E5911B27DB07006C3B1F /* MTLayerHeaders.h */,
 				06B4E52D1B2690C5006C3B1F /* MTImageViewStyleObj.h */,
 				06B4E52E1B2690C5006C3B1F /* MTImageViewStyleObj.m */,
 				06B4E52F1B2690C5006C3B1F /* MTLabelStyleObj.h */,
