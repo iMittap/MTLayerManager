@@ -46,7 +46,7 @@
 ### Swift
 
 - New File -> Header File 命名 "Bridging-Header.h"。
-- 於 "Bridging-Header.h" 加入 <MTLayerManager/MTLayerHeaders.h>
+- 於 "Bridging-Header.h" import <bMTLayerManager/MTLayerHeaders.h>。
 - Project -> Build Setting -> Search "objective-c bridging header" 加入 "Bridging-Header.h" 路徑。
 
 #### `.swift檔` 定義 MTLayerSceneView
