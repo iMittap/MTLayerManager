@@ -77,8 +77,7 @@ NSArray * const titles() {
 - (void)addLabelItem:(nonnull NSString *)pstrText Style:(nullable MTLabelStyleObj * )pLabelStyle
 {
     MTLayerLabel *pMTLayerLabel =
-        [[MTLayerLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)
-                                     WithString:pstrText];
+        [[MTLayerLabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) WithString:pstrText];
     
     [self addSubview:pMTLayerLabel];
 }

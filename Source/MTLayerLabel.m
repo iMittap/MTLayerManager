@@ -38,14 +38,24 @@
     {
         eEMT_LAYER_STYLE = MT_LayerStyle_Text;
         
-        UIFont *pFont = [UIFont boldSystemFontOfSize:24.0f];
-        UILabel *pLbl = [[UILabel alloc] initWithFrame:self.bounds];
-        [pLbl setText:pstrText];
-        [pLbl setFont:pFont];
-        [pLbl setTextColor:[UIColor purpleColor]];
-        [self addSubview:pLbl];
-        [pLbl sizeToFit];
-        [pLbl setUserInteractionEnabled:NO];
+        self.backgroundColor = [UIColor redColor];
+        
+        UILabel *plblTemp = [[UILabel alloc] initWithFrame:self.bounds];
+        
+        plblTemp.numberOfLines = 0.0f;
+        plblTemp.text = pstrText;
+        plblTemp.textColor = [UIColor purpleColor];
+        plblTemp.font = [UIFont boldSystemFontOfSize:24.0f];
+        plblTemp.userInteractionEnabled = NO;
+        
+        [plblTemp sizeToFit];
+        [self addSubview:plblTemp];
+    
+        CGSize size = [plblTemp sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, 3000)];
+        
+        CGRect kframe = self.frame;
+        kframe.size = size;
+        self.frame = kframe;
     }
     
     return self;

@@ -19,7 +19,7 @@ typedef enum
 }EMT_LAYER_STYLE;
 
 
-@interface MTLayerView : UIView
+@interface MTLayerView : UIView 
 {
     EMT_LAYER_STYLE eEMT_LAYER_STYLE;
 }

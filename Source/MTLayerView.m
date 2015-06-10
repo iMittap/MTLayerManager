@@ -70,17 +70,21 @@
         
         UIMenuItem *menuItem1 = [[UIMenuItem alloc] initWithTitle:@"改變顏色" action:@selector(changeColorDidTapped:)];
         
-        UIMenuItem *menuItem2 = [[UIMenuItem alloc] initWithTitle:@"刪除" action:@selector(deleteActionDidTapped:)];
+        UIMenuItem *menuItem2 = [[UIMenuItem alloc] initWithTitle:@"水平鏡射" action:@selector(horizontalProjectionDidTapped:)];
+        
+        UIMenuItem *menuItem3 = [[UIMenuItem alloc] initWithTitle:@"垂直鏡射" action:@selector(verticalProjectionDidTapped:)];
+        
+        UIMenuItem *menuItem4 = [[UIMenuItem alloc] initWithTitle:@"刪除" action:@selector(deleteActionDidTapped:)];
         
         UIMenuController *menu = [UIMenuController sharedMenuController];
         
         if (eEMT_LAYER_STYLE == MT_LayerStyle_Image)
         {
-            [menu setMenuItems: @[menuItem2]];
+            [menu setMenuItems: @[ menuItem2, menuItem3, menuItem4]];
         }
         else if (eEMT_LAYER_STYLE == MT_LayerStyle_Text)
         {
-            [menu setMenuItems: @[menuItem1, menuItem2]];
+            [menu setMenuItems: @[menuItem1, menuItem2, menuItem3, menuItem4]];
         }
         else
         {
@@ -112,6 +116,11 @@
             
             [self setCenter:CGPointMake( pointX, pointY)];
             [panRecognizer setTranslation:CGPointZero inView:self.superview];
+            
+            if ([UIMenuController sharedMenuController].isMenuVisible)
+            {
+                [[UIMenuController sharedMenuController] setTargetRect:self.frame inView:self.superview];
+            }
         }
     }
     else if ([recognizer isKindOfClass:[UIRotationGestureRecognizer class]])
@@ -137,6 +146,16 @@
     CGAffineTransform currentTransformation = self.transform;
     CGAffineTransform newTransform = CGAffineTransformScale(currentTransformation, newScale, newScale);
     self.transform = newTransform;
+}
+
+- (void) horizontalProjectionDidTapped:(UIMenuItem *)sender
+{
+    self.transform = CGAffineTransformScale(self.transform, -1.0, 1.0);
+}
+
+- (void) verticalProjectionDidTapped:(UIMenuItem *)sender
+{
+    self.transform = CGAffineTransformScale(self.transform, 1.0, -1.0);
 }
 
 - (void) changeColorDidTapped:(UIMenuItem *)sender
@@ -174,6 +193,14 @@
         result = YES;
     }
     else if (@selector(changeColorDidTapped:) == action)
+    {
+        result = YES;
+    }
+    else if (@selector(horizontalProjectionDidTapped:) == action)
+    {
+        result = YES;
+    }
+    else if (@selector(verticalProjectionDidTapped:) == action)
     {
         result = YES;
     }
