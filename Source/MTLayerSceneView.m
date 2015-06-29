@@ -125,6 +125,8 @@ NSArray * const titles() {
     
     UIViewController *vc = (UIViewController *)[self firstAvailableUIViewController];
     
+    self.m_pvwPickerBK.backgroundColor = [UIColor whiteColor];
+    
     if (![vc.view.subviews containsObject:self.m_pvwPickerBK])
     {
         self.m_pvwPickerBK = [[UIView alloc] initWithFrame:CGRectMake( 0, vc.view.frame.size.height, vc.view.frame.size.width, 216)];
