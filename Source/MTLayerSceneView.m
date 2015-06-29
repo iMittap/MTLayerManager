@@ -137,7 +137,7 @@ NSArray * const titles() {
         [self.m_pvwPickerBK addSubview:navBar];
         
         UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
-        [rightItem setTitle:@"關閉" forState:UIControlStateNormal];
+        [rightItem setTitle:@"关闭" forState:UIControlStateNormal];
         [rightItem setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [rightItem setFrame:CGRectMake( navBar.frame.size.width * .75, 0, navBar.frame.size.width * .25, navBar.frame.size.height)];
         [rightItem addTarget:self action:@selector(hidePickerView) forControlEvents:UIControlEventTouchUpInside];

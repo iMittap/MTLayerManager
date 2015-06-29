@@ -68,13 +68,13 @@
     {
         [self becomeFirstResponder];
         
-        UIMenuItem *menuItem1 = [[UIMenuItem alloc] initWithTitle:@"改變顏色" action:@selector(changeColorDidTapped:)];
+        UIMenuItem *menuItem1 = [[UIMenuItem alloc] initWithTitle:@"改变颜色" action:@selector(changeColorDidTapped:)];
         
-        UIMenuItem *menuItem2 = [[UIMenuItem alloc] initWithTitle:@"水平鏡射" action:@selector(horizontalProjectionDidTapped:)];
+        UIMenuItem *menuItem2 = [[UIMenuItem alloc] initWithTitle:@"水平镜射" action:@selector(horizontalProjectionDidTapped:)];
         
-        UIMenuItem *menuItem3 = [[UIMenuItem alloc] initWithTitle:@"垂直鏡射" action:@selector(verticalProjectionDidTapped:)];
+        UIMenuItem *menuItem3 = [[UIMenuItem alloc] initWithTitle:@"垂直镜射" action:@selector(verticalProjectionDidTapped:)];
         
-        UIMenuItem *menuItem4 = [[UIMenuItem alloc] initWithTitle:@"刪除" action:@selector(deleteActionDidTapped:)];
+        UIMenuItem *menuItem4 = [[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(deleteActionDidTapped:)];
         
         UIMenuController *menu = [UIMenuController sharedMenuController];
         
