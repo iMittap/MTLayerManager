@@ -42,6 +42,7 @@
         eEMT_LAYER_STYLE = MT_LayerStyle_Image;
         
         UIImageView *pImgView = [[UIImageView alloc] initWithImage:pImg];
+        [pImgView setContentMode:UIViewContentModeScaleAspectFit];
         [pImgView setFrame:self.bounds];
         [self addSubview:pImgView];
     }
