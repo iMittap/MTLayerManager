@@ -38,13 +38,11 @@
     {
         eEMT_LAYER_STYLE = MT_LayerStyle_Text;
         
-        self.backgroundColor = [UIColor redColor];
-        
         UILabel *plblTemp = [[UILabel alloc] initWithFrame:self.bounds];
         
         plblTemp.numberOfLines = 0.0f;
         plblTemp.text = pstrText;
-        plblTemp.textColor = [UIColor purpleColor];
+        plblTemp.textColor = [UIColor redColor];
         plblTemp.font = [UIFont boldSystemFontOfSize:24.0f];
         plblTemp.userInteractionEnabled = NO;
         

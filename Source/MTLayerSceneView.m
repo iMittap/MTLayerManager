@@ -20,6 +20,7 @@
 @property ( nonatomic, retain ) UIImage         *m_pBackgroudImage;
 @property ( nonatomic, retain ) UIPickerView    *m_pPicker;
 @property ( nonatomic, retain ) UIView          *m_pvwPickerBK;
+@property ( nonatomic, retain ) UIImageView     *m_pimgBK;
 
 @end
 
@@ -68,13 +69,19 @@ NSArray * const titles() {
 {
     self.m_pBackgroudImage = pImg;
     
-    UIImageView *pImgView = [[UIImageView alloc] initWithImage:m_pBackgroudImage];
-    [pImgView setContentMode:UIViewContentModeScaleToFill];
-    [pImgView setFrame:self.bounds];
-    [self addSubview:pImgView];
-    
+    if ([self.subviews containsObject: _m_pimgBK])
+    {
+        _m_pimgBK.image = self.m_pBackgroudImage;
+    }
+    else
+    {
+        _m_pimgBK = [[UIImageView alloc] initWithImage:m_pBackgroudImage];
+        [_m_pimgBK setContentMode:UIViewContentModeScaleAspectFit];
+        [_m_pimgBK setFrame:self.bounds];
+        [self addSubview:_m_pimgBK];
+    }
 }
-
+ 
 - (void)addLabelItem:(nonnull NSString *)pstrText Style:(nullable MTLabelStyleObj * )pLabelStyle
 {
     MTLayerLabel *pMTLayerLabel =
