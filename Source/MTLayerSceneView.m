@@ -69,6 +69,7 @@ NSArray * const titles() {
     self.m_pBackgroudImage = pImg;
     
     UIImageView *pImgView = [[UIImageView alloc] initWithImage:m_pBackgroudImage];
+    [pImgView setContentMode:UIViewContentModeScaleAspectFit];
     [pImgView setFrame:self.bounds];
     [self addSubview:pImgView];
     
